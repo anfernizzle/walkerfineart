@@ -1,0 +1,34 @@
+{
+  "redirects": [
+    { "source": "/index.php", "destination": "/", "permanent": true },
+    { "source": "/profile.php", "destination": "/profile", "permanent": true },
+    {
+      "source": "/adventures-of-the-kimono-cowboy.php",
+      "destination": "/adventures-of-the-kimono-cowboy",
+      "permanent": true
+    },
+    { "source": "/unplugged.php", "destination": "/unplugged", "permanent": true },
+    {
+      "source": "/far-west-days.php",
+      "destination": "/far-west-days",
+      "permanent": true
+    },
+    { "source": "/crt.php", "destination": "/crt", "permanent": true },
+    { "source": "/eyes.php", "destination": "/eyes", "permanent": true },
+    { "source": "/japan.php", "destination": "/japan", "permanent": true },
+    { "source": "/cambodia.php", "destination": "/cambodia", "permanent": true },
+    {
+      "source": "/rise-and-fall.php",
+      "destination": "/rise-and-fall",
+      "permanent": true
+    },
+    { "source": "/life101.php", "destination": "/life101", "permanent": true },
+    {
+      "source": "/sky-exchange.php",
+      "destination": "/sky-exchange",
+      "permanent": true
+    },
+    { "source": "/borders.php", "destination": "/borders", "permanent": true },
+    { "source": "/borders2.php", "destination": "/borders", "permanent": true }
+  ]
+}

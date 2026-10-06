@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Legacy conversion scratch (canonical copies live in lib/)
+content-raw/
+xml-raw/

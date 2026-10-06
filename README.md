@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# walkerfineart.org
 
-## Getting Started
+Modern Next.js (TypeScript) rebuild of Anthony Cannon Walker’s fine art portfolio, with visual and behavioral parity to the legacy PHP site. Static export — ready for Vercel.
 
-First, run the development server:
+## Local development
 
 ```bash
+cd ~/Projects/walkerfineart
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://127.0.0.1:4321](http://127.0.0.1:4321).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production build (static)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Output lands in `out/` (`output: "export"` in `next.config.ts`).
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create a new GitHub repo (this app is **not** part of Walker-Design / `my-portfolio-new`).
+2. Push this folder:
+   ```bash
+   git remote add origin git@github.com:<you>/walkerfineart.git
+   git push -u origin main
+   ```
+3. In Vercel → New Project → import that repo.
+4. Framework: Next.js. Build: `next build`. Output: static export (no server).
+5. Point `walkerfineart.org` (and `www`) DNS to Vercel. TLS is automatic.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`vercel.json` permanently redirects legacy `*.php` URLs to clean routes.
+
+## What’s included
+
+- All public portfolio pages (home, profile, project series)
+- Legacy CSS / Foundation / Owl Carousel / jQuery behavior
+- Gallery data converted from XML → JSON (edit `lib/galleries/*.json`)
+- Page copy in `lib/content/*.html`
+- Needed images + MyFonts webfonts under `public/`
+
+## What’s excluded
+
+- Nested FTP dumps (`anthonywalkerdesign.com`, empty `walkerdesign.org`)
+- Scaffold/dev files (`template.php`, `borders2.php`, `content/static examples`)
+- GoDaddy ad image
+
+## Content edits
+
+| Change | Where |
+|--------|--------|
+| Project text / profile | `lib/content/*.html` |
+| Slideshow images & captions | `lib/galleries/*.json` + files under `public/img/projects/` |
+| Nav / page metadata | `lib/projects.ts` |
+| Styles | `public/css/site.css` (parity-first; avoid redesign) |
