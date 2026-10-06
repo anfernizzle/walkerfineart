@@ -51,7 +51,7 @@ export function Header() {
                 </div>
               </a>
 
-              <div className="small-9 columns display-inline header-menu1">
+              <div className="small-12 columns display-inline header-menu1">
                 <ul>
                   <li>
                     <a href="/">HOME</a>
@@ -69,23 +69,6 @@ export function Header() {
                   </li>
                 </ul>
               </div>
-
-              <div className="small-3 columns display-inline social-media debug2">
-                <a
-                  href="https://www.facebook.com/pages/Anthony-Cannon-Walker/160096117346239"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="facebook">&nbsp;</span>
-                </a>
-                <a
-                  href="https://twitter.com/KimonoCowboy"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="twitter">&nbsp;</span>
-                </a>
-              </div>
             </div>
 
             <input id="ac-1" name="accordion-1" type="checkbox" />
@@ -94,14 +77,8 @@ export function Header() {
               className="sub-header large-12 columns display-inline header-menu2 text-left divider-line-bottom debug"
             >
               <ul id="main-menu">
-                <li className="non-item sort">Sort By: </li>
-                <li className="all-projects-button sort">All Projects</li>
-                <li className="photo-button sort">Photography</li>
-                <li className="video-button sort">Film &amp; Video</li>
-                <li className="inter-button sort">Interactive</li>
                 <li className="all-projects pullDown">
                   <ul className="sub-options">
-                    <li className="non-item">Projects: </li>
                     {NAV_PROJECTS.map((project) => (
                       <li
                         key={project.label}

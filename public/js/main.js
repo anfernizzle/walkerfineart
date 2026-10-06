@@ -36,49 +36,6 @@ $(document).ready(function(){
         $(e.target).siblings("ul.sort-categories").toggle();
     });        
 
-
-    //Sort-Buttons     
-     
-    //ALL PROJECTS
-    $( ".all-projects-button" ).click(function() {
-        $(".photo").css({"display":"block"});
-        $(".video").css({"display":"block"});  
-        $(".inter").css({"display":"block"});         
-        $("li.photo").css({"display":"inline-block"});
-        $("li.video").css({"display":"inline-block"});
-        $("li.inter").css({"display":"inline-block"});                      
-    });            
-            
-    //VIDEO
-    $( ".video-button" ).click(function() {
-        $(".photo").css({"display":"none"});
-        $(".video").css({"display":"block"});  
-        $(".inter").css({"display":"none"});         
-        $("li.photo").css({"display":"none"});
-        $("li.video").css({"display":"inline-block"});
-        $("li.inter").css({"display":"none"});                      
-    });      
-
-    //INTERACTIVE
-    $( ".inter-button" ).click(function() {
-        $(".photo").css({"display":"none"});
-        $(".video").css({"display":"none"});  
-        $(".inter").css({"display":"block"});         
-        $("li.photo").css({"display":"none"});
-        $("li.video").css({"display":"none"});
-        $("li.inter").css({"display":"inline-block"});                      
-    });      
-
-    //PHOTO
-    $( ".photo-button" ).click(function() {
-        $(".photo").css({"display":"block"});
-        $(".video").css({"display":"none"});  
-        $(".inter").css({"display":"none"});         
-        $("li.photo").css({"display":"inline-block"});
-        $("li.video").css({"display":"none"});
-        $("li.inter").css({"display":"none"});                      
-    });          
-
     //iOS Style Switch
     $(function() {
     $('div.switch-parent input').change(function(){

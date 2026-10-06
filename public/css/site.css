@@ -2890,5 +2890,9 @@ body#interior.profile #lower-content hr {
 	}
 
 }
-/* Next.js boot: show carousel until Owl adds .owl-loaded */
+
+
+/* Show carousel container; hide non-first slides until Owl initializes */
 .owl-carousel { display: block; }
+.owl-carousel:not(.owl-loaded) > .item { display: none; }
+.owl-carousel:not(.owl-loaded) > .item:first-child { display: block; }

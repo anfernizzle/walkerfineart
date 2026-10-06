@@ -10,15 +10,6 @@ function PreloadImages() {
   return (
     <div className="preload_images">
       <img className="preload" src="/img/3bar.png" alt="Hamburger menu icon" />
-      <img className="preload" src="/img/facebook.png" alt="facebook" />
-      <img className="preload" src="/img/facebook-b.png" alt="facebook" />
-      <img className="preload" src="/img/twitter.png" alt="twitter" />
-      <img className="preload" src="/img/twitter-b.png" alt="twitter" />
-      <img
-        className="preload"
-        src="/img/walker-design-logo.png"
-        alt="Walker Design Logo"
-      />
       <img
         className="preload"
         src="/img/top-title.png"

@@ -77,7 +77,7 @@ export const PAGES: Record<string, PageDefinition> = {
     bodyId: "interior",
     bodyClass: "overlay profile",
     contentFile: "profile",
-    loadOwl: true,
+    loadOwl: false,
   },
   "adventures-of-the-kimono-cowboy": {
     slug: "adventures-of-the-kimono-cowboy",
@@ -155,7 +155,7 @@ export const PAGES: Record<string, PageDefinition> = {
     bodyId: "interior",
     bodyClass: "overlay rise-and-fall",
     contentFile: "rise-and-fall",
-    loadOwl: true,
+    loadOwl: false,
   },
   life101: {
     slug: "life101",
@@ -163,7 +163,7 @@ export const PAGES: Record<string, PageDefinition> = {
     bodyId: "interior",
     bodyClass: "overlay life101",
     contentFile: "life101",
-    loadOwl: true,
+    loadOwl: false,
   },
   "sky-exchange": {
     slug: "sky-exchange",
@@ -181,7 +181,7 @@ export const PAGES: Record<string, PageDefinition> = {
     bodyId: "interior",
     bodyClass: "overlay borders",
     contentFile: "borders",
-    loadOwl: true,
+    loadOwl: false,
   },
 };
 
