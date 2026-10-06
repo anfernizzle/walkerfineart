@@ -16,7 +16,7 @@ export function Header() {
             <a href="/profile">PROFILE</a>
           </li>
           <li>
-            <a href="mailto:info@walkerfineart.org?subject=I just came from walkerfineart.org">
+            <a href="mailto:anthony.cannon.walker@gmail.com?subject=I just came from walkerfineart.org">
               CONTACT
             </a>
           </li>
@@ -63,7 +63,7 @@ export function Header() {
                     <a href="/profile">PROFILE</a>
                   </li>
                   <li>
-                    <a href="mailto:info@walkerfineart.org?subject=I just came from walkerfineart.org">
+                    <a href="mailto:anthony.cannon.walker@gmail.com?subject=I just came from walkerfineart.org">
                       CONTACT
                     </a>
                   </li>
