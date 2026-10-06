@@ -22,17 +22,14 @@ Output lands in `out/` (`output: "export"` in `next.config.ts`).
 
 ## Deploy on Vercel
 
-1. Create a new GitHub repo (this app is **not** part of Walker-Design / `my-portfolio-new`).
-2. Push this folder:
-   ```bash
-   git remote add origin git@github.com:<you>/walkerfineart.git
-   git push -u origin main
-   ```
-3. In Vercel → New Project → import that repo.
-4. Framework: Next.js. Build: `next build`. Output: static export (no server).
-5. Point `walkerfineart.org` (and `www`) DNS to Vercel. TLS is automatic.
+Repo: https://github.com/anfernizzle/walkerfineart
+
+1. Import that repo in Vercel (Framework: Next.js, build `next build`, static export).
+2. Point `walkerfineart.org` (and `www`) DNS to Vercel. TLS is automatic.
 
 `vercel.json` permanently redirects legacy `*.php` URLs to clean routes.
+
+Contact: `anthony.cannon.walker@gmail.com`
 
 ## What’s included
 
